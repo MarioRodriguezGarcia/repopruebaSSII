@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los lenguajes de la web</title>
+    <style>
+        /* Configuración general de la página para centrar el contenido */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* CUADRADO MÁS GRANDE: Se aumentó el ancho a 950px y alto a 550px */
+        .diapositiva {
+            width: 950px;
+            height: 550px;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            position: relative;
+            box-sizing: border-box;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Posicionamiento del logotipo en la esquina superior derecha con más margen */
+        .logo {
+            position: absolute;
+            top: 25px;
+            right: 45px;
+            width: 130px; /* Tamaño óptimo para que se lea bien el texto de la escuela */
+            height: auto;
+        }
+
+        /* Líneas dobles horizontales (ajustadas al nuevo tamaño de caja) */
+        .linea-doble {
+            width: 90%;
+            height: 8px;
+            border-top: 3px solid #34a8a4;   
+            border-bottom: 3px solid #34a8a4;
+            position: absolute;
+        }
+
+        /* Se bajó un poco la línea superior para dar espacio al logo */
+        .linea-superior {
+            top: 95px;
+        }
+
+        /* Se subió un poco la línea inferior para mantener la simetría */
+        .linea-inferior {
+            bottom: 95px;
+        }
+
+        /* Título Principal (Naranja) */
+        .titulo {
+            color: #d96b00;
+            font-size: 3.5rem; /* Un poco más grande para acompañar la caja */
+            font-weight: bold;
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Bloque contenedor del subtítulo con guiones a los lados */
+        .subtitulo-contenedor {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 25px;
+            width: 100%;
+        }
+
+        .subtitulo {
+            color: #6e655f;
+            font-size: 2.4rem;
+            margin: 0 35px; 
+            letter-spacing: 1px;
+        }
+
+        /* Los pequeños guiones decorativos marrones */
+        .guion {
+            width: 35px;
+            height: 4px;
+            background-color: #b09e8f;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="diapositiva">
+        <!-- Logotipo Jesuítas (Asegúrate de que tu imagen se llame 'logotipo.png' en tu carpeta) -->
+        <img src="logotipo.png" alt="Logotipo Escuela" class="logo">
+
+        <!-- Línea doble superior -->
+        <div class="linea-doble linea-superior"></div>
+
+        <!-- Textos principales -->
+        <h1 class="titulo">Los lenguajes de la web</h1>
+        
+        <div class="subtitulo-contenedor">
+            <div class="guion"></div>
+            <h2 class="subtitulo">HTML</h2>
+            <div class="guion"></div>
+        </div>
+
+        <!-- Línea doble inferior -->
+        <div class="linea-doble linea-inferior"></div>
+    </div>
+
+</body>
+</html>
+
